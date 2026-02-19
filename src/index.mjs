@@ -1,7 +1,7 @@
 import core from "@actions/core";
 import github from "@actions/github";
 
-const BASE_URL = "https://worktree.io";
+const BASE_URL = "https://worktree.io"; // eslint-disable-line default/no-hardcoded-urls
 
 async function run() {
   const token = core.getInput("token");
