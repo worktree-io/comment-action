@@ -1,0 +1,17 @@
+name: "Worktree"
+description: "Post an Open workspace link on every new issue"
+author: "worktree-io"
+
+branding:
+  icon: "external-link"
+  color: "green"
+
+inputs:
+  token:
+    description: "GitHub token used to post the comment. Defaults to the built-in GITHUB_TOKEN."
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
