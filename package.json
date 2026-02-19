@@ -7,13 +7,16 @@
   "type": "module",
   "main": "dist/index.mjs",
   "scripts": {
-    "build": "ncc build src/index.mjs -o dist --license licenses.txt"
+    "build": "ncc build src/index.mjs -o dist --license licenses.txt",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.3"
+    "@vercel/ncc": "^0.38.3",
+    "eslint-config-agent": "^2.0.1"
   }
 }
