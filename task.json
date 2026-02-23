@@ -1,0 +1,35 @@
+{
+  "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "name": "WorktreeComment",
+  "friendlyName": "Worktree",
+  "description": "Post an Open workspace link on every new work item",
+  "author": "worktree-io",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "inputs": [
+    {
+      "name": "token",
+      "type": "string",
+      "label": "Access Token",
+      "defaultValue": "$(System.AccessToken)",
+      "required": false,
+      "helpMarkDown": "Azure DevOps token used to post the comment. Defaults to the built-in `System.AccessToken`."
+    },
+    {
+      "name": "workItemId",
+      "type": "string",
+      "label": "Work Item ID",
+      "defaultValue": "$(WORK_ITEM_ID)",
+      "required": true,
+      "helpMarkDown": "The ID of the work item to comment on. Pass the ID forwarded by the service hook trigger."
+    }
+  ],
+  "execution": {
+    "Node20_1": {
+      "target": "dist/azure/index.mjs"
+    }
+  }
+}

@@ -8,7 +8,7 @@
   "type": "module",
   "main": "dist/index.mjs",
   "scripts": {
-    "build": "ncc build src/index.mjs -o dist --license licenses.txt",
+    "build": "ncc build src/github/index.mjs -o dist/github --license dist/github/licenses.txt && ncc build src/azure/index.mjs -o dist/azure --license dist/azure/licenses.txt",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.39.2",
     "eslint-config-agent": "^2.0.1",
+    "globals": "^17.3.0",
     "husky": "^9.1.7"
   }
 }
