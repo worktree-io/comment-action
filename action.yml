@@ -3,8 +3,8 @@ description: "Post an Open workspace link on every new issue"
 author: "worktree-io"
 
 branding:
-  icon: "external-link"
-  color: "green"
+  icon: "share-2"
+  color: "purple"
 
 inputs:
   token:
