@@ -31713,9 +31713,9 @@ async function run() {
   const body = [
     "A workspace is ready for this issue.",
     "",
-    `[![Open workspace →](https://img.shields.io/badge/Open_workspace_%E2%86%92-F05032?style=for-the-badge&logo=git&logoColor=white)](${url})`,
+    `<a href="${url}" target="_blank" rel="noopener noreferrer"><img alt="Open workspace →" src="https://img.shields.io/badge/Open_workspace_%E2%86%92-F05032?style=for-the-badge&logo=git&logoColor=white"></a>`,
     "",
-    `<sub>Powered by [Worktree](${BASE_URL}) · [Install](${BASE_URL}#install)</sub>`,
+    `<sub>Powered by <a href="${BASE_URL}" target="_blank" rel="noopener noreferrer">Worktree</a> · <a href="${BASE_URL}#install" target="_blank" rel="noopener noreferrer">Install</a></sub>`,
   ].join("\n");
 
   await octokit.rest.issues.createComment({

@@ -1,6 +1,6 @@
 # Worktree comment action
 
-Posts an **Open workspace** link as a comment whenever a new issue is opened in your repository. Clicking the link opens a local workspace in your editor via the [Worktree](https://worktree.io) desktop app.
+Posts an **Open workspace** link as a comment whenever a new issue is opened in your repository. Clicking the link opens a local workspace in your editor via the [Worktree](https://worktree.io) desktop app — in a new browser tab, so you don't lose the issue you were reading.
 
 ## Usage
 
